@@ -1,13 +1,20 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(33, 53, 113);
 }
 .principal_title{
+    text-shadow: 3px 3px rgb(9 14 18);
     display: inline-table;
     font-size: 300%;
     font-family:monospace;
     text-align: center;
     background-color: lightslategray; 
     color: green;
+    border:4px solid rgb(9 14 18);
+    margin-right: 35%;
+    margin-left: 35%;
 }
 #logo{
     width: 50%;
@@ -23,6 +30,9 @@ div{
     text-align: center;
     background-color: lightslategray;
     border:4px solid rgb(9 14 18);
+    margin-top: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 button{
     font-family: cursive;
