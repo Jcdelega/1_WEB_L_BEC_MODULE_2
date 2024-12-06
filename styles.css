@@ -3,22 +3,30 @@
 }
 body{
     background-color: rgb(33, 53, 113);
+    font-family: "Inknut Antiqua", serif;
 }
 .principal_title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-shadow: 3px 3px rgb(9 14 18);
-    display: inline-table;
     font-size: 300%;
     font-family:monospace;
-    text-align: center;
     background-color: lightslategray; 
     color: green;
     border:4px solid rgb(9 14 18);
+    border-radius: 20px;
     margin-right: 35%;
     margin-left: 35%;
 }
 #logo{
     width: 50%;
     height: 50%;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    font-family: "Inknut Antiqua", serif;
 }
 .phrases  {
     color: #cc3399;
@@ -30,16 +38,40 @@ div{
     text-align: center;
     background-color: lightslategray;
     border:4px solid rgb(9 14 18);
-    margin-top: 50px;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
 }
 button{
+    position: fixed;
+    bottom: 0;
+    left: 0;
     font-family: cursive;
     background-color: lightslategray;
     color:rgb(9 14 18)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 button:hover{
     color: lightslategray;
     background-color: rgb(9 14 18);
+    
+}
+.image_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inknut Antiqua", serif;
+}
+img{
+    height: 250px;
+    width: 250px;
+}
+.container_image_menu{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
