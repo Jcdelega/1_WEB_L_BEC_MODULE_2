@@ -10,7 +10,8 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     text-shadow: 3px 3px rgb(9 14 18);
-    font-size: 300%;
+    /*font-size: 300%;*/
+    font-size: clamp(42px, 0.9vw, 180px);
     font-family:monospace;
     background-color: lightslategray; 
     color: green;
@@ -33,16 +34,7 @@ body{
     font-style: italic;
     text-decoration: underline;
 }
-div{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    background-color: lightslategray;
-    border:4px solid rgb(9 14 18);
-    margin-top: 25px;
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-}
+
 button{
     position: fixed;
     bottom: 0;
@@ -67,11 +59,34 @@ button:hover{
 img{
     height: 250px;
     width: 250px;
+    margin: 0%;
 }
 .container_image_menu{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: none;
+}
+footer{
+    display:block;
+    
+}
+.bottom{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right img {
+    height: 50px;
+    width: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.top{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
 }
