@@ -1,5 +1,6 @@
 .contact{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(118, 135, 152, 0.3);
@@ -7,38 +8,8 @@
     font-size:xx-large;
     border-radius: 8px;
 }
-.box1 {
-
-  position: absolute;
-
-  top: 50px;
-
-  left: 50px;
-
-  width: 150px;
-
-  height: 150px;
-
-  background-color: red;
-
-  z-index: 1; /* Esta caja se muestra por encima */
-
-}
-
-.box2 {
-
-  position: absolute;
-
-  top: 100px;
-
-  left: 100px;
-
-  width: 150px;
-
-  height: 150px;
-
-  background-color: blue;
-
-  z-index: 0; /* Esta caja se muestra por debajo */
-
+@media screen and (min-width:1024px){
+    .contact{
+        flex-direction: row;
+    }
 }
